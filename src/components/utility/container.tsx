@@ -1,10 +1,5 @@
 import { cn } from "@/utils/cn";
-
-export type ContainerProps = {
-  children: React.ReactNode;
-  as?: React.ElementType;
-  className?: string;
-};
+import { ContainerProps } from "@/lib/types";
 
 export const Container = ({
   children,

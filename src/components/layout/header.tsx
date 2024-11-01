@@ -1,6 +1,6 @@
-import { Navbar } from "../../sections/navbar/navbar";
-import { Logo } from "../ui/logo";
-import { Container } from "../utility/container";
+import { Navbar } from "@/features/homepage/sections/navbar/navbar";
+import { Logo } from "@/components/ui/logo";
+import { Container } from "@/components/utility/container";
 
 export const Header = () => {
   return (
@@ -9,18 +9,17 @@ export const Header = () => {
             sticky top-0 left-0
             py-2
             backdrop-blur-md
-            flex
-            bg-gray-950/80
-            text-white
+            flex items-center
+            bg-gray-950
+            text-gray-300
         "
     >
       <Container
-        // TODO: remove border color
         className="
           w-full max-w-7xl 
-          flex items-start 
+          flex
           px-4 
-          border-rose-500 border"
+        "
       >
         <Logo />
         <Navbar />
