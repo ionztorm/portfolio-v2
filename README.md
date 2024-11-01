@@ -15,12 +15,27 @@
 
 - Sharp
 - React Icons
+- Tailwind Merge
+- Clsx
 
 ## Tasks
 
 ### Nav
 
-- [ ] Create navbar
-- [ ] Make responsive
-- [ ] Make Burget Button
-- [ ] Make burger functional
+- [x] Create navbar
+- [x] Make responsive
+- [x] Make Burget Button
+- [x] Make burger functional
+
+### Hero
+
+- [x] Create hero
+- [x] Make screen height, account for nav height
+
+### Footer
+
+- [x] Create footer
+
+### About
+
+- [ ] Write about section
