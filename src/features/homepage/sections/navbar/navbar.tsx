@@ -4,6 +4,7 @@ import { useViweport } from "@/hooks/useViewport";
 import { NavList } from "@/features/homepage/sections/navbar/components/nav-list";
 import { NavLinks } from "@/features/homepage/sections/navbar/lib/paths";
 import { useEffect, useState } from "react";
+import { BurgerButton } from "@/features/homepage/sections/navbar/components/burger-button";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +28,19 @@ export const Navbar = () => {
   return (
     <nav
       className="
-            pl-3 
-            border-l border-gray-400 border-1
+            w-full
+            flex justify-end sm:justify-between items-center
         "
     >
-      {isMobile && isOpen && <NavList list={NavLinks} />}
-      {!isMobile && <NavList list={NavLinks} />}
+      {isMobile && isOpen && (
+        <NavList
+          list={NavLinks}
+          isMobile={isMobile}
+          onClickLink={onClickLink}
+        />
+      )}
+      {!isMobile && <NavList list={NavLinks} isMobile={isMobile} />}
+      {isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
     </nav>
   );
 };
