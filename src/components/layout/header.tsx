@@ -12,6 +12,7 @@ export const Header = () => {
             flex items-center
             bg-gray-950
             text-gray-300
+            max-h-[40px]
         "
     >
       <Container
