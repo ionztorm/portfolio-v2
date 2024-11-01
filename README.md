@@ -2,7 +2,7 @@
 
 ## About
 
-## Tech
+## Tech
 
 ### Base
 
@@ -15,3 +15,12 @@
 
 - Sharp
 - React Icons
+
+## Tasks
+
+### Nav
+
+- [ ] Create navbar
+- [ ] Make responsive
+- [ ] Make Burget Button
+- [ ] Make burger functional
