@@ -23,5 +23,5 @@ export const NavList = ({
       </Link>
     </li>
   ));
-  return <ul className={cn("flex gap-3", className, classes)}>{NavList}</ul>;
+  return <ul className={cn("flex gap-4", className, classes)}>{NavList}</ul>;
 };
