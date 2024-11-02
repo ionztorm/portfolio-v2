@@ -9,3 +9,14 @@ export type ContainerProps = {
   as?: React.ElementType;
   className?: string;
 };
+
+export type SectionHeaderProps = Readonly<{
+  variant: "main" | "sub";
+}> &
+  ChildrenProps;
+
+export type SectionProps = {
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+};
