@@ -4,7 +4,7 @@ import { SkillList } from "@/features/homepage/sections/skills/components/skill-
 
 export const Skills = () => {
   return (
-    <Container as="article" className="text-center">
+    <Container as="article" className="text-center px-4">
       <SectionHeader variant="main">Skills</SectionHeader>
       <SectionHeader variant="sub">Languages</SectionHeader>
       <SkillList filter="language" />

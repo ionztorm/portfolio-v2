@@ -7,8 +7,8 @@ export type SkillProps = {
 export const Skill = ({ skill }: SkillProps) => {
   return (
     <li key={skill.name} className="grid place-items-center">
-      <skill.icon className={cn("size-9", skill.fillColour)} />
-      <span className="text-sm shrink-0">{skill.name}</span>
+      <skill.icon className={cn("size-7 md:size-9", skill.fillColour)} />
+      <span className="text-xs sm:text-sm shrink-0">{skill.name}</span>
     </li>
   );
 };

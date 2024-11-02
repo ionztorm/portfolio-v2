@@ -8,6 +8,8 @@ export const SkillList = ({ filter }: SkillListProps) => {
     .map((skill) => <Skill key={skill.name} skill={skill} />);
 
   return (
-    <ul className="flex items-center justify-center gap-10 my-10">{list}</ul>
+    <ul className="flex items-center justify-center gap-7 sm:gap-10 my-14 sm:my-10 flex-wrap">
+      {list}
+    </ul>
   );
 };
