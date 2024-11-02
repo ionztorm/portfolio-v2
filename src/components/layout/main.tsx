@@ -14,11 +14,11 @@ export const Main = () => {
       </Section>
       <Section
         id="about"
-        className="min-h-[100dvh] grid place-content-center bg-gray-50"
+        className="grid place-content-center bg-gray-50 pt-36 pb-72"
       >
         <About />
       </Section>
-      <Section id="skills" className="min-h-[100dvh] grid place-content-center">
+      <Section id="skills" className="grid place-content-center py-36 -mt-72">
         <Skills />
       </Section>
     </main>
