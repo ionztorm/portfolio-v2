@@ -38,4 +38,11 @@
 
 ### About
 
-- [ ] Write about section
+- [x] Write about section
+
+### Skills
+
+- [ ] Create skills array
+- [ ] Design filter method
+- [ ] Design skills layout
+- [ ] Create skills section
