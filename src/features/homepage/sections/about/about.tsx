@@ -7,7 +7,7 @@ export const About = () => {
       as="article"
       className="text-center p-4 grid gap-3 lg:gap-7 max-w-3xl lg:text-xl md:text-lg text-sm"
     >
-      <SectionHeader>About me</SectionHeader>
+      <SectionHeader variant="main">About me</SectionHeader>
       <p className="leading-relaxed">
         I&apos;m Leon, a fullstack web developer from Wirral, UK. Following eye
         surgery back in 2022, I decided to try my hand at developing basic
