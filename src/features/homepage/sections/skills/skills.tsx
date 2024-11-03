@@ -4,7 +4,10 @@ import { SkillList } from '@/features/homepage/sections/skills/components/skill-
 
 export const Skills = () => {
 	return (
-		<Container as='article' className='rounded-md border bg-white p-10 text-center shadow-md'>
+		<Container
+			as='article'
+			className='w-full max-w-3xl rounded-md border bg-white p-10 text-center shadow-md'
+		>
 			<SectionHeader variant='main'>Skills</SectionHeader>
 			<SectionHeader variant='sub'>Languages</SectionHeader>
 			<SkillList filter='language' />
