@@ -1,48 +1,28 @@
-"use client";
+'use client';
 
-import { useViweport } from "@/hooks/useViewport";
-import { NavList } from "@/features/homepage/sections/navbar/components/nav-list";
-import { NavLinks } from "@/features/homepage/sections/navbar/lib/paths";
-import { useEffect, useState } from "react";
-import { BurgerButton } from "@/features/homepage/sections/navbar/components/burger-button";
+import { useState } from 'react';
+import { BurgerButton } from '@/features/homepage/sections/navbar/components/burger-button';
+import { NavList } from '@/features/homepage/sections/navbar/components/nav-list';
+import { NavLinks } from '@/features/homepage/sections/navbar/lib/paths';
+import { useLockBodyScroll } from '@/hooks/use-lock-body-scroll';
+import { useViweport } from '@/hooks/use-viewport';
 
 export const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const onClickLink = () => setIsOpen(false);
-  // check if screen size is mobile
-  const isMobile = useViweport("sm");
+	const [isOpen, setIsOpen] = useState(false);
+	const onClickLink = () => setIsOpen(false);
+	// check if screen size is mobile
+	const isMobile = useViweport('sm');
 
-  // prevent body from scrolling when mobile menu is open
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+	// prevent body from scrolling when mobile menu is open
+	useLockBodyScroll(isOpen);
 
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [isOpen]);
+	if (isMobile === null) return null;
 
-  if (isMobile === null) return null;
+	return (
+		<nav className='flex w-full items-center justify-end sm:justify-between'>
+			<NavList list={NavLinks} isMobile={isMobile} isOpen={isOpen} onClickLink={onClickLink} />
 
-  return (
-    <nav
-      className="
-            w-full
-            flex justify-end sm:justify-between items-center
-        "
-    >
-      {isMobile && isOpen && (
-        <NavList
-          list={NavLinks}
-          isMobile={isMobile}
-          onClickLink={onClickLink}
-        />
-      )}
-      {!isMobile && <NavList list={NavLinks} isMobile={isMobile} />}
-      {isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
-    </nav>
-  );
+			{isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
+		</nav>
+	);
 };
