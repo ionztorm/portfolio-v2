@@ -2,7 +2,7 @@ import type { PortalProps } from '@/lib/types';
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 
-const Portal = ({ children, parent, className = '' }: Readonly<PortalProps>) => {
+export const Portal = ({ children, parent, className = '' }: Readonly<PortalProps>) => {
   useEffect(() => {
     if (parent) {
       parent.classList.add('overflow-hidden');
@@ -16,7 +16,3 @@ const Portal = ({ children, parent, className = '' }: Readonly<PortalProps>) => 
 
   return createPortal(<div className={className}>{children}</div>, parent);
 };
-
-Portal.displayName = 'Portal';
-
-export { Portal };
