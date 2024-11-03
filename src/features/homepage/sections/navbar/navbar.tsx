@@ -13,6 +13,8 @@ export const Navbar = () => {
   // check if screen size is mobile
   const isMobile = useViewport('sm');
 
+  if (isMobile === null) return null;
+
   return (
     <nav
       className='
