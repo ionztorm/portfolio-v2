@@ -25,6 +25,8 @@ export const Navbar = () => {
     };
   }, [isOpen]);
 
+  if (isMobile === null) return null;
+
   return (
     <nav
       className="

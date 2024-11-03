@@ -11,11 +11,11 @@ const breakpoints = Object.fromEntries(
   Object.entries(twScreens).map(([key, value]) => [
     key,
     Number.parseInt(value.replace("px", ""), 10),
-  ])
+  ]),
 );
 
 export function useViweport(breakpoint: TScreenSizes) {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
