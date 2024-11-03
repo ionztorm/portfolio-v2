@@ -6,19 +6,19 @@ export type ChildrenProps = Readonly<PropsWithChildren>;
 
 export type UseLockBodyScroll = (isLocked: boolean) => void;
 
-export type ContainerProps = {
+export type ContainerProps = Readonly<{
 	children: React.ReactNode;
 	as?: React.ElementType;
 	className?: string;
-};
+}>;
 
 export type SectionHeaderProps = Readonly<{
 	variant: 'main' | 'sub';
 }> &
 	ChildrenProps;
 
-export type SectionProps = {
+export type SectionProps = Readonly<{
 	children: React.ReactNode;
 	className?: string;
 	id?: string;
-};
+}>;
