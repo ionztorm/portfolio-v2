@@ -14,6 +14,7 @@ export type ContainerProps = Readonly<{
 
 export type SectionHeaderProps = Readonly<{
 	variant: 'main' | 'sub';
+	className?: string;
 }> &
 	ChildrenProps;
 
