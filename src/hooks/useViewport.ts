@@ -14,7 +14,7 @@ const breakpoints = Object.fromEntries(
   ]),
 );
 
-export function useViweport(breakpoint: TScreenSizes) {
+export function useViewport(breakpoint: TScreenSizes) {
   const [isMobile, setIsMobile] = useState<boolean | null>(null);
 
   useEffect(() => {
