@@ -42,7 +42,13 @@
 
 ### Skills
 
-- [ ] Create skills array
-- [ ] Design filter method
-- [ ] Design skills layout
-- [ ] Create skills section
+- [x] Create skills array
+- [x] Design filter method
+- [x] Design skills layout
+- [x] Create skills section
+
+### Projects
+
+- [ ] Create projects array
+- [ ] Design projects layout
+- [ ] Create projects section
