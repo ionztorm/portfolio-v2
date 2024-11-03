@@ -26,7 +26,7 @@ export const Navbar = () => {
           <NavList list={NavLinks} isMobile={isMobile} onClickLink={onClickLink} />
         </Portal>
       )}
-      {!isMobile && <NavList list={NavLinks} isMobile={isMobile} className='hidden' />}
+      {!isMobile && <NavList list={NavLinks} isMobile={isMobile} />}
       {isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
     </nav>
   );

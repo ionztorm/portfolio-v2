@@ -4,8 +4,8 @@ import Link from 'next/link';
 
 export const NavList = ({ list, className, isMobile, onClickLink }: NavListProps) => {
   const classes = isMobile
-    ? 'flex-col gap-3 w-full items-center justify-center h-[100dvh] text-gray-50 bg-gray-950 sm:hidden'
-    : 'pl-5 border-l border-gray-400 sm:flex';
+    ? 'flex-col gap-3 w-full items-center justify-center h-[100dvh] text-gray-50 bg-gray-950'
+    : 'pl-5 border-l border-gray-400';
 
   const NavList = Object.values(list).map((link) => (
     <li key={link.path}>
