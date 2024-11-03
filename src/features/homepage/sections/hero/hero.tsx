@@ -1,4 +1,5 @@
 export const Hero = () => {
+	// TODO: update text colours
 	return (
 		<h1 className='grid max-w-md text-center'>
 			<span className='text-4xl font-extrabold tracking-tighter md:text-6xl lg:text-7xl'>

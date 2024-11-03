@@ -3,6 +3,7 @@ import type { NavListProps } from '@/features/homepage/sections/navbar/types/typ
 import { cn } from '@/utils/cn';
 
 export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavListProps) => {
+	// TODO: Update text and bg colours
 	const NavList = Object.values(list).map((link) => (
 		<li key={link.path}>
 			<Link

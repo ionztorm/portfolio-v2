@@ -5,6 +5,7 @@ import { Projects } from '@/features/homepage/sections/projects/projects';
 import { Skills } from '@/features/homepage/sections/skills/skills';
 
 export const Main = () => {
+	// TODO: Update bg colours
 	return (
 		<main>
 			<Section id='hero' className='grid h-[calc(100dvh-40px)] place-items-center'>

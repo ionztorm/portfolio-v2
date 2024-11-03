@@ -3,6 +3,7 @@ import { Container } from '@/components/utility/container';
 import { SkillList } from '@/features/homepage/sections/skills/components/skill-list';
 
 export const Skills = () => {
+	// TODO: Update bg colour
 	return (
 		<Container
 			as='article'

@@ -50,5 +50,5 @@
 ### Projects
 
 - [ ] Create projects array
-- [ ] Design projects layout
-- [ ] Create projects section
+- [x] Design projects layout
+- [x] Create projects section
