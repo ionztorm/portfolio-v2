@@ -1,6 +1,6 @@
 import { SectionHeader } from '@/components/ui/section-heading';
 import { Container } from '@/components/utility/container';
-import { Project } from './project';
+import { Project } from '@/features/homepage/sections/projects/components/project';
 
 export const Projects = () => {
 	return (
