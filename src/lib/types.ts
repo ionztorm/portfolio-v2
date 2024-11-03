@@ -1,5 +1,5 @@
-import { twScreens } from '@/hooks/useViewport';
-import type { PropsWithChildren } from 'react';
+import { twScreens } from "@/hooks/useViewport";
+import type { PropsWithChildren } from "react";
 
 export type TScreenSizes = keyof typeof twScreens;
 export type ChildrenProps = Readonly<PropsWithChildren>;
@@ -11,7 +11,7 @@ export type ContainerProps = {
 };
 
 export type SectionHeaderProps = Readonly<{
-  variant: 'main' | 'sub';
+  variant: "main" | "sub";
 }> &
   ChildrenProps;
 
@@ -20,8 +20,3 @@ export type SectionProps = {
   className?: string;
   id?: string;
 };
-
-export type PortalProps = PropsWithChildren<{
-  parent: HTMLElement;
-  className?: string;
-}>;

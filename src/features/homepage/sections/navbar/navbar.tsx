@@ -1,30 +1,45 @@
-'use client';
+"use client";
 
-import { Portal } from '@/components/utility/portal';
-import { BurgerButton } from '@/features/homepage/sections/navbar/components/burger-button';
-import { NavList } from '@/features/homepage/sections/navbar/components/nav-list';
-import { NavLinks } from '@/features/homepage/sections/navbar/lib/paths';
-import { useViewport } from '@/hooks/useViewport';
-import { useState } from 'react';
+import { useViweport } from "@/hooks/useViewport";
+import { NavList } from "@/features/homepage/sections/navbar/components/nav-list";
+import { NavLinks } from "@/features/homepage/sections/navbar/lib/paths";
+import { useEffect, useState } from "react";
+import { BurgerButton } from "@/features/homepage/sections/navbar/components/burger-button";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const onClickLink = () => setIsOpen(false);
   // check if screen size is mobile
-  const isMobile = useViewport('sm');
+  const isMobile = useViweport("sm");
+
+  // prevent body from scrolling when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
 
   if (isMobile === null) return null;
 
   return (
     <nav
-      className='
+      className="
             w-full
             flex justify-end sm:justify-between items-center
-        '>
+        "
+    >
       {isMobile && isOpen && (
-        <Portal parent={document.body} className='h-[100dvh] fixed top-0 left-0 w-full'>
-          <NavList list={NavLinks} isMobile={isMobile} onClickLink={onClickLink} />
-        </Portal>
+        <NavList
+          list={NavLinks}
+          isMobile={isMobile}
+          onClickLink={onClickLink}
+        />
       )}
       {!isMobile && <NavList list={NavLinks} isMobile={isMobile} />}
       {isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
