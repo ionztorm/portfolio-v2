@@ -4,12 +4,69 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --background-secondary: #f9fafb;
+  --foreground: #030712;
+
+  --hero-subtext: #374151;
+  --hero-overview: #6b7280;
+
+  --navbar-background: #030712;
+  --navbar-text: #d1d5db;
+  --navbar-border: #9ca3af;
+
+  --skills-background: #FFFFFF;
+  --skills-border: #f3f4f6;
+
+  --project-background: #FFFFFF;
+  --project-after-background: #1f2937;
+  --project-after-text: #FFFFFF;
+  --project-border: #f3f4f6;
+
+  --footer-text: #d1d5db;
+
+  --iconfill: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
+    --background-secondary: #030712;
+
     --foreground: #ededed;
+
+    --hero-subtext: #374151;
+    --hero-overview: #6b7280;
+
+    --navbar-background: #000000;
+    --navbar-text: #d1d5db;
+    --navbar-border: #9ca3af;
+    --navbar-text-hover: #FFFFFF;
+
+    --skills-background: #111827;
+    --skills-border: #374151;
+
+    --project-background: #111827;
+    --project-after-background: #1f2937;
+    --project-after-text: #FFFFFF;
+    --project-border: #374151;
+
+    --footer-text: #d1d5db;
+    --footer-background: #000000;
+
+    --iconfill: #FFFFFF;
   }
 }
+
+/*
+gray-50: #f9fafb
+gray-100: #f3f4f6
+gray-200: #e5e7eb
+gray-300: #d1d5db
+gray-400: #9ca3af
+gray-500: #6b7280
+gray-600: #4b5563
+gray-700: #374151
+gray-800: #1f2937
+gray-900: #111827
+gray-950: #030712
+*/

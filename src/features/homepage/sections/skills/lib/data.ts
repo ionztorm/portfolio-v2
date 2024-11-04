@@ -70,7 +70,7 @@ export const skills: TSkills = [
 		name: 'Next JS',
 		icon: RiNextjsFill,
 		shortName: 'Next',
-		fillColour: 'text-black dark:text-white',
+		fillColour: 'text-iconfill',
 		tag: ['lib/framework'],
 	},
 	{
@@ -91,7 +91,7 @@ export const skills: TSkills = [
 		name: 'ExpressJS',
 		icon: SiExpress,
 		shortName: 'Express',
-		fillColour: 'text-black dark:text-white',
+		fillColour: 'text-iconfill',
 		tag: ['lib/framework'],
 	},
 	{
@@ -113,14 +113,14 @@ export const skills: TSkills = [
 		name: 'Shadcn',
 		icon: SiShadcnui,
 		shortName: 'Shadcn',
-		fillColour: 'text-black dark:text-white',
+		fillColour: 'text-iconfill',
 		tag: ['lib/framework'],
 	},
 	{
 		name: 'JSON',
 		icon: VscJson,
 		shortName: 'JSON',
-		fillColour: 'text-black dark:text-white',
+		fillColour: 'text-iconfill',
 		tag: ['language'],
 	},
 	{
@@ -134,7 +134,7 @@ export const skills: TSkills = [
 		name: 'Vercel',
 		icon: SiVercel,
 		shortName: 'Vercel',
-		fillColour: 'text-black dark:text-white',
+		fillColour: 'text-iconfill',
 		tag: ['database/services'],
 	},
 	{

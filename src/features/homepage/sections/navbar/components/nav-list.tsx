@@ -3,12 +3,11 @@ import type { NavListProps } from '@/features/homepage/sections/navbar/types/typ
 import { cn } from '@/utils/cn';
 
 export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavListProps) => {
-	// TODO: Update text and bg colours
 	const NavList = Object.values(list).map((link) => (
 		<li key={link.path}>
 			<Link
 				href={link.path}
-				className='transition-all duration-500 hover:text-white hover:underline'
+				className='transition-all duration-500 hover:text-navbar-text-hover hover:underline'
 				onClick={onClickLink}
 			>
 				{link.label}
@@ -19,7 +18,7 @@ export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavL
 	return (
 		<ul
 			className={cn(
-				'fixed right-0 top-0 flex h-[100dvh] w-full flex-col items-center justify-center gap-3 bg-gray-950 text-gray-50 sm:relative sm:flex sm:h-auto sm:flex-row sm:justify-start sm:border-l sm:border-gray-400 sm:pl-5',
+				'fixed right-0 top-0 flex h-[100dvh] w-full flex-col items-center justify-center gap-3 bg-navbar-background text-navbar-text sm:relative sm:flex sm:h-auto sm:flex-row sm:justify-start sm:border-l sm:border-navbar-border sm:pl-5',
 				className,
 				{
 					hidden: isMobile && !isOpen,

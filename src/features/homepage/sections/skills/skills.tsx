@@ -3,11 +3,10 @@ import { Container } from '@/components/utility/container';
 import { SkillList } from '@/features/homepage/sections/skills/components/skill-list';
 
 export const Skills = () => {
-	// TODO: Update bg colour
 	return (
 		<Container
 			as='article'
-			className='w-full max-w-3xl rounded-md border bg-white p-10 text-center shadow-md'
+			className='w-full max-w-3xl rounded-md border border-skills-border bg-skills-background p-10 text-center shadow-md'
 		>
 			<SectionHeader variant='main'>Skills</SectionHeader>
 			<SectionHeader variant='sub'>Languages</SectionHeader>
