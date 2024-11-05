@@ -52,3 +52,21 @@
 - [ ] Create projects array
 - [x] Design projects layout
 - [x] Create projects section
+
+### Themes
+
+- [x] Create Dark theme (prefers dark)
+- [x] Create Light Themes
+- [x] Desigh toggle menu
+- [x] Build toggle menu
+- [ ] Build logic
+
+### Contact
+
+- [ ] Decide on Contact approach
+    - [ ] Contact form
+    - [ ] Email link
+
+### Case Studies
+
+- [ ] Design layout for project case studies
