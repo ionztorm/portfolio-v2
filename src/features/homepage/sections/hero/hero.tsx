@@ -1,6 +1,6 @@
 export const Hero = () => {
 	return (
-		<h1 className='grid max-w-md text-center'>
+		<h1 className='grid max-w-3xl text-center'>
 			<span className='text-4xl font-extrabold tracking-tighter md:text-6xl lg:text-7xl'>
 				Leon Lonsdale
 			</span>
