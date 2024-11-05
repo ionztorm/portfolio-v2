@@ -7,7 +7,7 @@ export const Hero = () => {
 			<span className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
 				Fullstack Engineer
 			</span>
-			<span className='text-sm text-hero-overview md:text-lg lg:text-xl'>
+			<span className='max-w-md text-sm text-hero-overview md:text-lg lg:text-xl'>
 				Building clean, acessible user experiences using cutting edge technologies
 			</span>
 		</h1>
