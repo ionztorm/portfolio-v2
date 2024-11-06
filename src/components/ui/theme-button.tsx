@@ -12,8 +12,10 @@ export const ThemeButton = ({ children, title, desc, onClick, active }: ThemeBut
 	return (
 		<button
 			type='button'
+			title={title}
 			aria-label={title}
 			aria-roledescription={desc}
+			aria-pressed={active}
 			className={cn(
 				'grid aspect-square size-6 place-content-center rounded-full border border-theme-button-border p-[1px] text-theme-icon-colour hover:border-theme-button-border-active hover:text-theme-icon-colour-active',
 				{

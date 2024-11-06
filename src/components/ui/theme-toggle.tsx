@@ -1,19 +1,16 @@
-import { useState } from 'react';
 import { HiComputerDesktop, HiMoon, HiSun } from 'react-icons/hi2';
-import type { Theme } from '@/lib/types';
-import { ThemeButton } from './theme-button';
+import { ThemeButton } from '@/components/ui/theme-button';
+import { useThemeContext } from '@/context/theme-context';
 
 export const ThemeToggle = () => {
-	const [theme, setTheme] = useState<Theme>('system');
-
-	console.log(theme);
+	const { theme, toggleTheme } = useThemeContext();
 
 	return (
 		<div className='flex gap-2 rounded-md'>
 			<ThemeButton
 				title='light mode'
 				desc='toggle light mode'
-				onClick={() => setTheme('light')}
+				onClick={() => toggleTheme('light')}
 				active={theme === 'light'}
 			>
 				<HiSun className='size-4' />
@@ -22,7 +19,7 @@ export const ThemeToggle = () => {
 			<ThemeButton
 				title='dark mode'
 				desc='toggle dark mode'
-				onClick={() => setTheme('dark')}
+				onClick={() => toggleTheme('dark')}
 				active={theme === 'dark'}
 			>
 				<HiMoon className='size-4' />
@@ -30,7 +27,7 @@ export const ThemeToggle = () => {
 			<ThemeButton
 				title='system preferred theme'
 				desc='use system preferred theme'
-				onClick={() => setTheme('system')}
+				onClick={() => toggleTheme('system')}
 				active={theme === 'system'}
 			>
 				<HiComputerDesktop className='size-4' />

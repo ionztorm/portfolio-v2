@@ -7,6 +7,15 @@ export type ChildrenProps = Readonly<PropsWithChildren>;
 export type Theme = 'light' | 'dark' | 'system';
 export type UseLockBodyScroll = (isLocked: boolean) => void;
 
+export type TThemeContext = {
+	theme: Theme;
+	toggleTheme: (mode: Theme) => void;
+};
+
+export type TThemeContextProviderProps = {
+	children: React.ReactNode;
+};
+
 export type ContainerProps = Readonly<{
 	children: React.ReactNode;
 	as?: React.ElementType;
