@@ -1,5 +1,6 @@
 import { Section } from '@/components/utility/section';
 import { About } from '@/features/homepage/sections/about/about';
+import { Contact } from '@/features/homepage/sections/contact/contact';
 import { Hero } from '@/features/homepage/sections/hero/hero';
 import { Projects } from '@/features/homepage/sections/projects/projects';
 import { Skills } from '@/features/homepage/sections/skills/skills';
@@ -18,9 +19,12 @@ export const Main = () => {
 			</Section>
 			<Section
 				id='projects'
-				className='grid place-items-center bg-background-secondary pb-36 pt-36'
+				className='pb-72 grid place-items-center bg-background-secondary pt-36'
 			>
 				<Projects />
+			</Section>
+			<Section id='contact' className='-mt-72 grid place-items-center py-36'>
+				<Contact />
 			</Section>
 		</main>
 	);
