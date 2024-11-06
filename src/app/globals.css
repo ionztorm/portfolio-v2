@@ -27,11 +27,12 @@
 
   --iconfill: #000000;
 
-
   --theme-button-border: #6b7280;
   --theme-icon-colour: var(--theme-button-border);
   --theme-button-border-active: #f9fafb;
   --theme-icon-colour-active: var(--theme-button-border-active);
+
+  --burger-colour: #f9fafb;
 }
 
 html.dark {

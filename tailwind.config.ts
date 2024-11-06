@@ -33,6 +33,7 @@ const config: Config = {
 				'theme-icon-colour': 'var(--theme-icon-colour)',
 				'theme-button-border-active': 'var(--theme-button-border-active)',
 				'theme-icon-colour-active': 'var(--theme-icon-colour-active)',
+				'burger-colour': 'var(--burger-colour)',
 			},
 		},
 	},
