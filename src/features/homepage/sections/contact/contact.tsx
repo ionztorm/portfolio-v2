@@ -29,14 +29,15 @@ export const Contact = () => {
 			<button
 				type='button'
 				onClick={copyEmail}
-				className='w-full cursor-pointer text-[2rem] font-extrabold tracking-tighter sm:transition-colors sm:duration-300 sm:hover:text-gray-700 md:text-6xl lg:text-7xl'
+				className='w-full cursor-pointer text-[2rem] font-extrabold tracking-tighter sm:transition-all sm:duration-300 sm:hover:text-gray-700 md:text-6xl lg:text-7xl'
+				title='Click me to copy email'
 			>
 				{displayText}
 			</button>
 			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
 				or give me a follow
 			</p>
-			<div className='flex items-center justify-center gap-2'>
+			<div className='flex items-center justify-center gap-2 w-full'>
 				<Link
 					href='https://github.com/ionztorm'
 					className='sm:transition-colors sm:duration-300 sm:hover:text-gray-700'
