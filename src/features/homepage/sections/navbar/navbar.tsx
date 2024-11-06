@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
+import { ThemeContextProvider } from '@/context/theme-context';
 import { BurgerButton } from '@/features/homepage/sections/navbar/components/burger-button';
 import { NavList } from '@/features/homepage/sections/navbar/components/nav-list';
 import { NavLinks } from '@/features/homepage/sections/navbar/lib/paths';
@@ -22,6 +24,9 @@ export const Navbar = () => {
 		<nav className='flex w-full items-center justify-end sm:justify-between'>
 			<NavList list={NavLinks} isMobile={isMobile} isOpen={isOpen} onClickLink={onClickLink} />
 
+			<ThemeContextProvider>
+				<ThemeToggle />
+			</ThemeContextProvider>
 			{isMobile && <BurgerButton isOpen={isOpen} onClick={setIsOpen} />}
 		</nav>
 	);

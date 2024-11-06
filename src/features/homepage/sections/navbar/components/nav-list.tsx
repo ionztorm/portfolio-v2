@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { ThemeToggle } from '@/components/ui/theme-toggle';
-import { ThemeContextProvider } from '@/context/theme-context';
 import type { NavListProps } from '@/features/homepage/sections/navbar/types/types';
 import { cn } from '@/utils/cn';
 
@@ -28,11 +26,6 @@ export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavL
 			)}
 		>
 			{NavList}
-			<li className='sm:ml-auto'>
-				<ThemeContextProvider>
-					<ThemeToggle />
-				</ThemeContextProvider>
-			</li>
 		</ul>
 	);
 };
