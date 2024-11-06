@@ -29,7 +29,7 @@ export const Contact = () => {
 			<button
 				type='button'
 				onClick={copyEmail}
-				className='w-full cursor-pointer text-[2rem] font-extrabold tracking-tighter transition-colors duration-300 hover:text-gray-700 md:text-6xl lg:text-7xl'
+				className='w-full cursor-pointer text-[2rem] font-extrabold tracking-tighter sm:transition-colors sm:duration-300 sm:hover:text-gray-700 md:text-6xl lg:text-7xl'
 			>
 				{displayText}
 			</button>
@@ -37,11 +37,19 @@ export const Contact = () => {
 				or give me a follow
 			</p>
 			<div className='flex items-center justify-center gap-2'>
-				<Link href='https://github.com/ionztorm' className='hover:text-gray-700' target='_blank'>
-					<RiGithubFill className='size-8 transition-colors duration-300 md:size-12' />
+				<Link
+					href='https://github.com/ionztorm'
+					className='sm:transition-colors sm:duration-300 sm:hover:text-gray-700'
+					target='_blank'
+				>
+					<RiGithubFill className='size-8 md:size-12' />
 				</Link>
-				<Link href='https://x.com/LeonLonsdale' className='hover:text-gray-700' target='_blank'>
-					<RiTwitterXFill className='size-8 transition-colors duration-300 md:size-12' />
+				<Link
+					href='https://x.com/LeonLonsdale'
+					className='sm:transition-colors sm:duration-300 sm:hover:text-gray-700'
+					target='_blank'
+				>
+					<RiTwitterXFill className='size-8 md:size-12' />
 				</Link>
 			</div>
 		</Container>
