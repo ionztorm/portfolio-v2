@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { RiGithubFill, RiTwitterXFill } from 'react-icons/ri';
+import Link from 'next/link';
 import { Container } from '@/components/utility/container';
 
 export const Contact = () => {
@@ -21,14 +22,14 @@ export const Contact = () => {
 	};
 
 	return (
-		<Container className='relative grid w-full max-w-6xl gap-3 p-10 text-center '>
+		<Container className='relative grid w-full max-w-6xl gap-3 py-10 text-center'>
 			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
 				Drop me a message...
 			</p>
 			<button
 				type='button'
 				onClick={copyEmail}
-				className='cursor-pointer text-4xl font-extrabold tracking-tighter md:text-6xl lg:text-7xl'
+				className='w-full cursor-pointer text-[2rem] font-extrabold tracking-tighter transition-colors duration-300 hover:text-gray-700 md:text-6xl lg:text-7xl'
 			>
 				{displayText}
 			</button>
@@ -36,8 +37,12 @@ export const Contact = () => {
 				or give me a follow
 			</p>
 			<div className='flex items-center justify-center gap-2'>
-				<RiGithubFill className='size-8 md:size-12' />
-				<RiTwitterXFill className='size-8 md:size-12' />
+				<Link href='https://github.com/ionztorm' className='hover:text-gray-700' target='_blank'>
+					<RiGithubFill className='size-8 transition-colors duration-300 md:size-12' />
+				</Link>
+				<Link href='https://x.com/LeonLonsdale' className='hover:text-gray-700' target='_blank'>
+					<RiTwitterXFill className='size-8 transition-colors duration-300 md:size-12' />
+				</Link>
 			</div>
 		</Container>
 	);

@@ -19,11 +19,14 @@ export const Main = () => {
 			</Section>
 			<Section
 				id='projects'
-				className='pb-72 grid place-items-center bg-background-secondary pt-36'
+				className='grid place-items-center bg-background-secondary pb-72 pt-36'
 			>
 				<Projects />
 			</Section>
-			<Section id='contact' className='-mt-72 grid place-items-center py-36'>
+			<Section
+				id='contact'
+				className='-mt-[15.5rem] grid place-items-center py-36 md:-mt-64 lg:-mt-[17rem]'
+			>
 				<Contact />
 			</Section>
 		</main>
