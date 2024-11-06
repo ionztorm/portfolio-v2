@@ -63,9 +63,9 @@
 
 ### Contact
 
-- [ ] Decide on Contact approach
+- [x] Decide on Contact approach
     - [ ] Contact form
-    - [ ] Email link
+    - [x] Email link
 
 ### Case Studies
 
