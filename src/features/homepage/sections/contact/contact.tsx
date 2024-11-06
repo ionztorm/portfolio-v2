@@ -21,7 +21,7 @@ export const Contact = () => {
 	};
 
 	return (
-		<Container className='relative grid w-full max-w-6xl gap-3 p-10 text-center shadow-md'>
+		<Container className='relative grid w-full max-w-6xl gap-3 p-10 text-center '>
 			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
 				Drop me a message...
 			</p>
