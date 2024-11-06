@@ -25,7 +25,19 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en' className='scroll-smooth'>
+		<html lang='en' className='scroll-smooth' suppressHydrationWarning>
+			<head>
+				<script>
+					{`
+            (function() {
+              const storedTheme = localStorage.getItem("theme");
+              const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+              const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
+              document.documentElement.classList.toggle("dark", initialTheme === "dark");
+            })();
+          `}
+				</script>
+			</head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} grid min-h-[100dvh] grid-rows-[40px_1fr_auto] bg-background text-foreground antialiased`}
 			>
