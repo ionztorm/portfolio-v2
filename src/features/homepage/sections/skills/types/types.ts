@@ -1,8 +1,6 @@
-import type { IconType } from 'react-icons';
+import { TIconType } from '@/lib/types';
 
 export type TIconProps = Readonly<{ className?: string }>;
-
-export type TIconType = IconType | ((props: { className?: string }) => JSX.Element | null);
 
 export type TSkill = Readonly<{
 	name: string;
