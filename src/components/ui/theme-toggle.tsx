@@ -6,7 +6,7 @@ export const ThemeToggle = () => {
 	const { theme, toggleTheme } = useThemeContext();
 
 	return (
-		<div className='mr-2 flex gap-2 rounded-md sm:mr-0'>
+		<div className='mr-2 flex animate-slideInFromRight gap-2 rounded-md sm:mr-0'>
 			<ThemeButton
 				title='light mode'
 				desc='toggle light mode'

@@ -3,8 +3,12 @@ import type { NavListProps } from '@/features/homepage/sections/navbar/types/typ
 import { cn } from '@/utils/cn';
 
 export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavListProps) => {
-	const NavList = Object.values(list).map((link) => (
-		<li key={link.path}>
+	const NavItems = Object.values(list).map((link, index) => (
+		<li
+			key={link.path}
+			className='animate-fadeInFromTop opacity-0'
+			style={{ animationDelay: `${index * 0.2}s` }} // Stagger animation by 0.1s
+		>
 			<Link
 				href={link.path}
 				className='transition-all duration-500 hover:text-navbar-text-hover hover:underline'
@@ -25,7 +29,7 @@ export const NavList = ({ list, className, isMobile, onClickLink, isOpen }: NavL
 				},
 			)}
 		>
-			{NavList}
+			{NavItems}
 		</ul>
 	);
 };
