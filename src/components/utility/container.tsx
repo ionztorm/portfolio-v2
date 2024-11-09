@@ -1,6 +1,12 @@
+'use client';
+
 import { ContainerProps } from '@/lib/types';
 import { cn } from '@/utils/cn';
 
-export const Container = ({ children, as: Component = 'div', className }: ContainerProps) => {
-	return <Component className={cn('mx-auto', className)}>{children}</Component>;
+export const Container = ({ children, as: Component = 'div', className, ref }: ContainerProps) => {
+	return (
+		<Component ref={ref} className={cn('mx-auto', className)}>
+			{children}
+		</Component>
+	);
 };

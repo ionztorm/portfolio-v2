@@ -1,11 +1,21 @@
+'use client';
+
 import { SectionHeader } from '@/components/ui/section-heading';
 import { Container } from '@/components/utility/container';
+import { useAnimateOnScroll } from '@/hooks/use-animate-on-scroll';
+import { DEFAULT_ANIMATION_TIME } from '@/lib/constants';
+import { cn } from '@/utils/cn';
 
 export const About = () => {
+	const { ref, animationClasses } = useAnimateOnScroll('left', DEFAULT_ANIMATION_TIME);
 	return (
 		<Container
+			ref={ref}
 			as='article'
-			className='grid max-w-3xl gap-3 p-4 text-center text-sm md:text-lg lg:gap-7 lg:text-xl'
+			className={cn(
+				'grid max-w-3xl gap-3 p-4 text-center text-sm opacity-0 md:text-lg lg:gap-7 lg:text-xl',
+				animationClasses,
+			)}
 		>
 			<SectionHeader variant='main'>About me</SectionHeader>
 			<p className='leading-relaxed'>

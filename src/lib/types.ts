@@ -1,4 +1,4 @@
-import type { PropsWithChildren } from 'react';
+import type { MutableRefObject, PropsWithChildren } from 'react';
 import type { IconType } from 'react-icons';
 import { twScreens } from '@/hooks/use-viewport';
 
@@ -22,6 +22,7 @@ export type ContainerProps = Readonly<{
 	children: React.ReactNode;
 	as?: React.ElementType;
 	className?: string;
+	ref?: MutableRefObject<HTMLElement | null>;
 }>;
 
 export type SectionHeaderProps = Readonly<{

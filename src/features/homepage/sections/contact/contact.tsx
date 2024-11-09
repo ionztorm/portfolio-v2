@@ -4,8 +4,12 @@ import { Container } from '@/components/utility/container';
 import { CopyEmailButton } from '@/features/homepage/sections/contact/components/copy-email-button';
 import { SocialLink } from '@/features/homepage/sections/contact/components/social-links';
 import { SocialLinks } from '@/features/homepage/sections/contact/lib/data';
+import { useAnimateOnScroll } from '@/hooks/use-animate-on-scroll';
+import { DEFAULT_ANIMATION_TIME } from '@/lib/constants';
+import { cn } from '@/utils/cn';
 
 export const Contact = () => {
+	const { ref, animationClasses } = useAnimateOnScroll('right', DEFAULT_ANIMATION_TIME);
 	const email = 'hello@leonlonsdale.dev';
 
 	const SocialList = Object.entries(SocialLinks).map(([key, { url, icon }]) => (
@@ -13,7 +17,10 @@ export const Contact = () => {
 	));
 
 	return (
-		<Container className='relative grid w-full max-w-6xl gap-3 py-10 text-center'>
+		<Container
+			ref={ref}
+			className={cn('relative grid w-full max-w-6xl gap-3 py-10 text-center', animationClasses)}
+		>
 			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
 				Drop me a message...
 			</p>
