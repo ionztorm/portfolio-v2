@@ -4,7 +4,7 @@ import { Project } from '@/features/homepage/sections/projects/components/projec
 
 export const Projects = () => {
 	return (
-		<Container as='article' className='grid w-full max-w-7xl p-4 text-center'>
+		<Container shouldAnimate={true} as='article' className='grid w-full max-w-7xl p-4 text-center'>
 			<SectionHeader variant='main' className='mb-10'>
 				Projects
 			</SectionHeader>

@@ -3,7 +3,13 @@ import { cn } from '@/utils/cn';
 
 export const Section = ({ children, className, id }: SectionProps) => {
 	return (
-		<section className={cn('px-4', className)} id={id}>
+		<section
+			id={id}
+			className={cn(
+				'px-4 transition-opacity duration-700', // Base transition
+				className,
+			)}
+		>
 			{children}
 		</section>
 	);

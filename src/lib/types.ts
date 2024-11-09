@@ -22,6 +22,7 @@ export type ContainerProps = Readonly<{
 	children: React.ReactNode;
 	as?: React.ElementType;
 	className?: string;
+	shouldAnimate?: boolean;
 }>;
 
 export type SectionHeaderProps = Readonly<{

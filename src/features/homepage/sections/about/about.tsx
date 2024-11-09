@@ -4,6 +4,7 @@ import { Container } from '@/components/utility/container';
 export const About = () => {
 	return (
 		<Container
+			shouldAnimate={true}
 			as='article'
 			className='grid max-w-3xl gap-3 p-4 text-center text-sm md:text-lg lg:gap-7 lg:text-xl'
 		>

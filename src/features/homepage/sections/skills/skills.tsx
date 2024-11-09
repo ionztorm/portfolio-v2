@@ -5,6 +5,7 @@ import { SkillList } from '@/features/homepage/sections/skills/components/skill-
 export const Skills = () => {
 	return (
 		<Container
+			shouldAnimate={true}
 			as='article'
 			className='w-full max-w-3xl rounded-md border border-skills-border bg-skills-background p-10 text-center shadow-md'
 		>

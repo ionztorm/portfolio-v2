@@ -42,6 +42,7 @@ const config: Config = {
 				slideInFromLeft: 'slideInFromLeft 1.5s ease-out forwards',
 				slideInFromRight: 'slideInFromRight 1.5s ease-out forwards',
 				fadeInSlideUpAndGrow: 'fadeInSlideUpAndGrow 1.5s ease-out forwards',
+				fadeInSlideDownAndGrow: 'fadeInSlideDownAndGrow 1.5s ease-out forwards',
 			},
 		},
 	},
