@@ -8,7 +8,10 @@ import { Skills } from '@/features/homepage/sections/skills/skills';
 export const Main = () => {
 	return (
 		<main>
-			<Section id='hero' className='grid h-[calc(100dvh-40px)] place-items-center'>
+			<Section
+				id='hero'
+				className='grid h-[calc(100dvh-40px)] place-content-center place-items-center'
+			>
 				<Hero />
 			</Section>
 			<Section id='about' className='grid place-items-center bg-background-secondary pb-72 pt-36'>
