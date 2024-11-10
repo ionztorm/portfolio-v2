@@ -16,7 +16,7 @@ export const Hero = () => {
 			</h1>
 			<Link
 				href='#about'
-				className='rounded-md border px-4 py-2 transition-all duration-300 hover:bg-neutral-500 dark:border-neutral-700 dark:hover:bg-neutral-800'
+				className='rounded-md border px-4 py-2 transition-all duration-300 hover:bg-neutral-300 dark:border-neutral-700 dark:hover:bg-neutral-800'
 			>
 				Read More
 			</Link>
