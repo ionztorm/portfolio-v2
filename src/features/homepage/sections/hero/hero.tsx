@@ -1,3 +1,4 @@
+import { HiChevronDown } from 'react-icons/hi2';
 import Link from 'next/link';
 
 export const Hero = () => {
@@ -16,9 +17,10 @@ export const Hero = () => {
 			</h1>
 			<Link
 				href='#about'
-				className='rounded-md border px-4 py-2 transition-all duration-300 hover:bg-neutral-300 dark:border-neutral-700 dark:hover:bg-neutral-800'
+				className='grid place-items-center rounded-md px-4 py-2 font-medium transition-all duration-300 hover:bg-neutral-300 dark:hover:bg-neutral-800'
 			>
-				Read More
+				<span>Read More</span>
+				<HiChevronDown className='animate-bounce' />
 			</Link>
 		</>
 	);
