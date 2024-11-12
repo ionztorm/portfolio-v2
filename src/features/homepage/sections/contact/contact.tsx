@@ -6,11 +6,15 @@ import { SocialLink } from '@/features/homepage/sections/contact/components/soci
 import { SocialLinks } from '@/features/homepage/sections/contact/lib/data';
 import { useAnimateOnScroll } from '@/hooks/use-animate-on-scroll';
 import { DEFAULT_ANIMATION_TIME } from '@/lib/constants';
+import { clientEnv } from '@/lib/validations/validator-client-env';
 import { cn } from '@/utils/cn';
 
 export const Contact = () => {
 	const { ref, animationClasses } = useAnimateOnScroll('right', DEFAULT_ANIMATION_TIME);
-	const email = 'hello@leonlonsdale.dev';
+
+	const email = clientEnv.NEXT_PUBLIC_CONTACT_EMAIL;
+
+	console.log('email in contact component: ', email);
 
 	const SocialList = Object.entries(SocialLinks).map(([key, { url, icon }]) => (
 		<SocialLink key={key} url={url} icon={icon} />
