@@ -88,7 +88,7 @@ export const skills: TSkills = [
 		tag: ['database/services'],
 	},
 	{
-		name: 'ExpressJS',
+		name: 'express.js',
 		icon: SiExpress,
 		shortName: 'Express',
 		fillColour: 'text-iconfill',
