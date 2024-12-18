@@ -1,3 +1,6 @@
+import { BunIcon } from '@/features/homepage/sections/skills/components/bun-icon';
+import { ConvexIcon } from '@/features/homepage/sections/skills/components/convex-icon';
+import type { TSkills } from '@/features/homepage/sections/skills/types/types';
 import { BiLogoGoLang, BiLogoPostgresql, BiLogoTypescript } from 'react-icons/bi';
 import { DiMongodb, DiSass } from 'react-icons/di';
 import {
@@ -12,9 +15,6 @@ import {
 } from 'react-icons/ri';
 import { SiExpress, SiShadcnui, SiVercel } from 'react-icons/si';
 import { VscJson } from 'react-icons/vsc';
-import { BunIcon } from '@/features/homepage/sections/skills/components/bun-icon';
-import { ConvexIcon } from '@/features/homepage/sections/skills/components/convex-icon';
-import { TSkills } from '@/features/homepage/sections/skills/types/types';
 
 export const skills: TSkills = [
 	{

@@ -1,6 +1,6 @@
 import { Skill } from '@/features/homepage/sections/skills/components/skill';
 import { skills } from '@/features/homepage/sections/skills/lib/data';
-import { SkillListProps } from '@/features/homepage/sections/skills/types/types';
+import type { SkillListProps } from '@/features/homepage/sections/skills/types/types';
 
 export const SkillList = ({ filter }: SkillListProps) => {
 	const list = skills

@@ -1,6 +1,6 @@
+import type { twScreens } from '@/hooks/use-viewport';
 import type { MutableRefObject, PropsWithChildren } from 'react';
 import type { IconType } from 'react-icons';
-import { twScreens } from '@/hooks/use-viewport';
 
 export type TScreenSizes = keyof typeof twScreens;
 export type ChildrenProps = Readonly<PropsWithChildren>;

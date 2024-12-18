@@ -1,7 +1,7 @@
 'use client';
 
+import type { TIconProps } from '@/features/homepage/sections/skills/types/types';
 import { useEffect, useState } from 'react';
-import { TIconProps } from '@/features/homepage/sections/skills/types/types';
 
 export function BunIcon({ className }: TIconProps) {
 	const [theme, setTheme] = useState<'light' | 'dark' | undefined>(undefined);

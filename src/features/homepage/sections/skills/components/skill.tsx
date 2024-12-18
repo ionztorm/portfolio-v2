@@ -1,4 +1,4 @@
-import { TSkill } from '@/features/homepage/sections/skills/types/types';
+import type { TSkill } from '@/features/homepage/sections/skills/types/types';
 import { cn } from '@/utils/cn';
 
 export type SkillProps = {

@@ -1,4 +1,4 @@
-import { SectionHeaderProps } from '@/lib/types';
+import type { SectionHeaderProps } from '@/lib/types';
 import { cn } from '@/utils/cn';
 
 export const SectionHeader = ({ children, variant, className }: SectionHeaderProps) => {

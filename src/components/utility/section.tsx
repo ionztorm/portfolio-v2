@@ -1,4 +1,4 @@
-import { SectionProps } from '@/lib/types';
+import type { SectionProps } from '@/lib/types';
 import { cn } from '@/utils/cn';
 
 export const Section = ({ children, className, id }: SectionProps) => {

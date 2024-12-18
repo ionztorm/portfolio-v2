@@ -3,57 +3,56 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --background-secondary: #f9fafb;
-  --foreground: #030712;
+	--background: #ffffff;
+	--background-secondary: #f9fafb;
+	--foreground: #030712;
 
-  --hero-subtext: #374151;
-  --hero-overview: #6b7280;
+	--hero-subtext: #374151;
+	--hero-overview: #6b7280;
 
-  --navbar-background: #030712;
-  --navbar-text: #d1d5db;
-  --navbar-border: #9ca3af;
+	--navbar-background: #030712;
+	--navbar-text: #d1d5db;
+	--navbar-border: #9ca3af;
 
-  --skills-background: #FFFFFF;
-  --skills-border: #f3f4f6;
+	--skills-background: #ffffff;
+	--skills-border: #f3f4f6;
 
-  --project-background: #FFFFFF;
-  --project-after-background: #1f2937;
-  --project-after-text: #FFFFFF;
-  --project-border: #f3f4f6;
+	--project-background: #ffffff;
+	--project-after-background: #1f2937;
+	--project-after-text: #ffffff;
+	--project-border: #f3f4f6;
 
-  --footer-text: #d1d5db;
-  --footer-background: #030712;
+	--footer-text: #d1d5db;
+	--footer-background: #030712;
 
-  --iconfill: #000000;
+	--iconfill: #000000;
 
-  --theme-button-border: #6b7280;
-  --theme-icon-colour: var(--theme-button-border);
-  --theme-button-border-active: #f9fafb;
-  --theme-icon-colour-active: var(--theme-button-border-active);
+	--theme-button-border: #6b7280;
+	--theme-icon-colour: var(--theme-button-border);
+	--theme-button-border-active: #f9fafb;
+	--theme-icon-colour-active: var(--theme-button-border-active);
 
-  --burger-colour: #f9fafb;
+	--burger-colour: #f9fafb;
 }
 
 html.dark {
-  --background: #000000;
-  --background-secondary: #030712;
-  --foreground: #ededed;
+	--background: #000000;
+	--background-secondary: #030712;
+	--foreground: #ededed;
 
-  --navbar-background: #000000;
-  --navbar-text-hover: #FFFFFF;
+	--navbar-background: #000000;
+	--navbar-text-hover: #ffffff;
 
-  --skills-background: #111827;
-  --skills-border: #374151;
+	--skills-background: #111827;
+	--skills-border: #374151;
 
-  --project-background: #111827;
-  --project-border: #374151;
+	--project-background: #111827;
+	--project-border: #374151;
 
-  --footer-background: #000000;
+	--footer-background: #000000;
 
-  --iconfill: #FFFFFF;
+	--iconfill: #ffffff;
 }
-
 
 /*
 gray-50: #f9fafb
@@ -69,73 +68,72 @@ gray-900: #111827
 gray-950: #030712
 */
 
-
 @keyframes fadeInFromTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateY(-40px);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @keyframes fadeInFromBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes slideInFromLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-40px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateX(-40px);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 @keyframes slideInFromRight {
-  0% {
-    opacity: 0;
-    transform: translateX(40px);
-  }
+	0% {
+		opacity: 0;
+		transform: translateX(40px);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 @keyframes fadeInSlideUpAndGrow {
-  0% {
-    opacity: 0;
-    transform: translateY(40px) scale(0.9);
-  }
+	0% {
+		opacity: 0;
+		transform: translateY(40px) scale(0.9);
+	}
 
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
 }

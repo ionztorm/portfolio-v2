@@ -1,6 +1,6 @@
 'use client';
 
-import { ContainerProps } from '@/lib/types';
+import type { ContainerProps } from '@/lib/types';
 import { cn } from '@/utils/cn';
 
 export const Container = ({ children, as: Component = 'div', className, ref }: ContainerProps) => {

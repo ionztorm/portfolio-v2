@@ -1,5 +1,5 @@
+import type { SocialLinkProps } from '@/features/homepage/sections/contact/types/types';
 import Link from 'next/link';
-import { SocialLinkProps } from '@/features/homepage/sections/contact/types/types';
 
 export const SocialLink = ({ url, icon }: SocialLinkProps) => {
 	const Icon = icon;

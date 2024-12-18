@@ -25,11 +25,11 @@ export const Contact = () => {
 			ref={ref}
 			className={cn('relative grid w-full max-w-6xl gap-3 py-10 text-center', animationClasses)}
 		>
-			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
+			<p className='font-medium text-hero-subtext text-xl md:text-2xl lg:text-3xl'>
 				Drop me a message...
 			</p>
 			<CopyEmailButton email={email} />
-			<p className='text-xl font-medium text-hero-subtext md:text-2xl lg:text-3xl'>
+			<p className='font-medium text-hero-subtext text-xl md:text-2xl lg:text-3xl'>
 				or give me a follow
 			</p>
 			<div className='flex w-full items-center justify-center gap-2'>{SocialList}</div>

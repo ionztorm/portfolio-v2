@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import type { UseLockBodyScroll } from '@/lib/types';
+import { useEffect } from 'react';
 
 export const useLockBodyScroll: UseLockBodyScroll = (isLocked) => {
 	useEffect(() => {

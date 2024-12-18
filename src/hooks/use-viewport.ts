@@ -1,7 +1,7 @@
+import tailwindConfig from '@/../tailwind.config';
+import type { TScreenSizes } from '@/lib/types';
 import { useEffect, useState } from 'react';
 import resolveConfig from 'tailwindcss/resolveConfig';
-import tailwindConfig from '@/../tailwind.config';
-import { TScreenSizes } from '@/lib/types';
 
 const twConfig = resolveConfig(tailwindConfig);
 export const twScreens = twConfig.theme.screens;

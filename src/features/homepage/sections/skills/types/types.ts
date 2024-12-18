@@ -1,4 +1,4 @@
-import { TIconType } from '@/lib/types';
+import type { TIconType } from '@/lib/types';
 
 export type TIconProps = Readonly<{ className?: string }>;
 

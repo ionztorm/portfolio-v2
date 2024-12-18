@@ -1,6 +1,6 @@
-import { HiComputerDesktop, HiMoon, HiSun } from 'react-icons/hi2';
 import { ThemeButton } from '@/components/ui/theme-button';
 import { useThemeContext } from '@/context/theme-context';
+import { HiComputerDesktop, HiMoon, HiSun } from 'react-icons/hi2';
 
 export const ThemeToggle = () => {
 	const { theme, toggleTheme } = useThemeContext();

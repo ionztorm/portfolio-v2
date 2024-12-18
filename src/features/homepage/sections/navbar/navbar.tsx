@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { ThemeContextProvider } from '@/context/theme-context';
 import { BurgerButton } from '@/features/homepage/sections/navbar/components/burger-button';
@@ -8,6 +7,7 @@ import { NavList } from '@/features/homepage/sections/navbar/components/nav-list
 import { NavLinks } from '@/features/homepage/sections/navbar/lib/paths';
 import { useLockBodyScroll } from '@/hooks/use-lock-body-scroll';
 import { useViweport } from '@/hooks/use-viewport';
+import { useState } from 'react';
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);

@@ -1,8 +1,8 @@
 'use client';
 
-import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import type { TThemeContext, TThemeContextProviderProps } from '@/lib/types';
 import type { Theme } from '@/lib/types';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 const ThemeContext = createContext<TThemeContext | null>(null);
 
