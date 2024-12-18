@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 
-export const useAnimateOnScroll = (direction: 'left' | 'right', duration = 3) => {
+export const useAnimateOnScroll = (direction: 'left' | 'right', duration = 1) => {
 	const [isVisible, setIsVisible] = useState<boolean | undefined>(false);
 	const ref = useRef<HTMLElement | null>(null);
 
@@ -50,7 +50,7 @@ export const useAnimateOnScroll = (direction: 'left' | 'right', duration = 3) =>
 	}, [duration]);
 
 	const animationClasses = useMemo(() => {
-		return `relative transition-all ${isVisible ? 'opacity-100 translate-x-0' : `opacity-0 ${direction === 'left' ? '-translate-x-[50vw]' : 'translate-x-[50vw]'}`}`;
+		return `relative transition-opacity, transition-transform ${isVisible ? 'opacity-100 translate-x-0' : `opacity-0 ${direction === 'left' ? '-translate-x-[50vw]' : 'translate-x-[50vw]'}`}`;
 	}, [isVisible, direction]);
 
 	return { ref, animationClasses };
